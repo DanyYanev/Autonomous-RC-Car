@@ -32,6 +32,7 @@ class CarAI {
   bool ShouldStabilize = false;
 
   //Func ptr to curr and next routine.
+  //Implemented with finite amount of routines and not using stack is because im too lazy to implement a stack. (Embeded doesnt support std) 
   RoutinePtr CurrentRoutine = DEFAULT_ROUTINE;
   RoutinePtr NextRoutine;
 
